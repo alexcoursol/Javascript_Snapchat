@@ -1,0 +1,23 @@
+<ion-view view-title="Connection">
+    <ion-content class="has-header" ng-controller="connectCtrl">
+        <form class="list list-inset" name="authForm" method="post" ng-submit="connect(authForm)">
+            <label class="item item-input">
+                <input type="text" name="email" placeholder="Email" ng-model="user.email"/>
+            </label>
+            <label class="item item-input">
+                <input type="text" name="password" placeholder="Password" ng-model="user.password"/>
+            </label>
+            <button class="button button-block button-positive">Connect</button>
+            <div id="stayCoBox">
+                <div>Stay connected</div>
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" name="connected" ng-model="user.connected">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </div>
+        </form>
+        <div id="register"><a href="#/register" title="register"><button class="button button-outline button-positive">You're not registered</button></a></div>
+    </ion-content>
+</ion-view>

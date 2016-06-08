@@ -1,0 +1,14 @@
+<ion-view view-title="Registration">
+    <ion-content class="has-header" ng-controller="registerCtrl">
+        <form class="list list-inset" name="authForm" method="post" ng-submit="register(authForm)">
+            <label class="item item-input">
+                <input type="text" name="email" placeholder="Email" ng-model="user.email"/>
+            </label>
+            <label class="item item-input">
+                <input type="text" name="password" placeholder="Password" ng-model="user.password"/>
+            </label>
+            <button class="button button-block button-positive">Register</button>
+        </form>
+        <div id="register"><a href="#/connect" title="connect"><button class="button button-outline button-positive">Connection page</button></a></div>
+    </ion-content>
+</ion-view>

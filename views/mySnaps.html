@@ -1,0 +1,9 @@
+<ion-view view-title="MySnaps">
+    <ion-content ng-controller="mySnapsCtrl">
+          <ion-list>
+            <ion-item collection-repeat="snap in snaps" ng-click="displayMySnap(snap)">
+                 {{ snap.id_sender }}
+            </ion-item>
+          </ion-list>
+    </ion-content>
+</ion-view>

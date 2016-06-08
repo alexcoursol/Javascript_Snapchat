@@ -1,0 +1,11 @@
+<ion-view view-title="Time">
+    <ion-content ng-controller="timeCtrl" scroll="false">
+        <div id="container">
+            <ul id="timeBox">
+                <li id="time">5</li>
+                <li id="param"><span ng-click="changeTime('minus')" id="minus">-</span><span ng-click="changeTime('plus')" id="plus">+</span></li>
+            </ul>
+        </div>
+        <button class="button button-block button-positive" ng-click="send()">Send</button>
+    </ion-content>
+</ion-view>

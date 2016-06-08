@@ -1,0 +1,9 @@
+<ion-view view-title="Users">
+    <ion-content ng-controller="receiverCtrl">
+          <ion-list>
+            <ion-item collection-repeat="user in users" ng-click="setReceiver(user)">
+                User {{ user }}
+            </ion-item>
+          </ion-list>
+    </ion-content>
+</ion-view>
